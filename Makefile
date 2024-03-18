@@ -22,4 +22,4 @@ build:
 	set CGO_ENABLED=1 && set GOOS=linux && set GOARCH=amd64 && go build -ldflags=-linkmode=external \
 		-mod vendor \
 		-o ./bin/${APP_NAME}.a \
-		-buildmode=c-archive ./internal
+		-buildmode=c-archive ./pkg/api
